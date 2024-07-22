@@ -21,3 +21,4 @@ Undo option will appear for 3 seconds By clicking undo we can undo a delete
 
 # RESPONSIVE DESIGN
 Home Screen in Landscape mode ,the list view is represented at right side of the screen and graph is represented at left side of the screen
+![WhatsApp Image 2024-07-22 at 1 42 32 AM (1)](https://github.com/user-attachments/assets/b7f0bc9f-04f2-434a-b417-dad566ea6498)
