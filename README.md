@@ -2,7 +2,7 @@
 
 > **Smart Expense** is a modern group expense management app designed to make splitting bills, tracking shared expenses, and settling up simple, transparent, and stress-free.
 
-Whether you're sharing rent with roommates, splitting restaurant bills with friends, managing household expenses, or traveling with a group, Smart Expense helps you easily keep track of **who paid, who owes, and who needs to settle up**.
+Whether you're sharing rent with roommates, splitting restaurant bills with friends, managing household expenses, or traveling with a group, Smart Expense helps you keep track of **who paid, who owes, and who needs to settle up**.
 
 ---
 
@@ -206,7 +206,7 @@ If the expense is shared equally:
 Each person's share = ₹1,666.67
 ```
 
-Smart Expense keeps track of the individual balances and calculates the required settlements.
+Smart Expense keeps track of individual balances and calculates the required settlements.
 
 This eliminates the need for manual calculations.
 
@@ -230,7 +230,7 @@ This eliminates the need for manual calculations.
 
 Smart Expense focuses on keeping shared financial information protected.
 
-The application uses secure authentication and controlled access to ensure that group information is available to authorized members.
+The application uses Firebase authentication and Firebase's security mechanisms to control access to application data.
 
 The app is also designed without advertisements or unnecessary tracking.
 
@@ -254,96 +254,57 @@ Smart Expense focuses on providing a simple and modern experience.
 
 ## 🛠️ Tech Stack
 
-> Update this section with the exact technologies used in your implementation.
+### Frontend
 
-| Category             | Technology                  |
-| -------------------- | --------------------------- |
-| Platform             | Android                     |
-| Programming Language | `Your Language`             |
-| UI Framework         | `Your UI Framework`         |
-| Backend              | `Your Backend`              |
-| Database             | `Your Database`             |
-| Authentication       | `Your Authentication`       |
-| Storage              | `Your Storage`              |
-| Notifications        | `Your Notification Service` |
-| Architecture         | `Your Architecture`         |
+* **Flutter**
+* **Dart**
+
+### Backend & Cloud Services
+
+* **Firebase**
+* **Firebase Authentication**
+* **Cloud Firestore**
+* **Firebase Cloud Storage**
+* **Firebase Cloud Messaging (FCM)**
+
+### Platform
+
+* Android
 
 ---
 
-## 📁 Project Structure
+## 🏗️ Architecture
+
+The application follows a Flutter-based architecture with Firebase providing backend and cloud services.
 
 ```text
-SmartExpense/
-│
-├── app/
-│   ├── src/
-│   │   └── ...
-│   │
-│   └── ...
-│
-├── screenshots/
-│   ├── home.png
-│   ├── groups.png
-│   ├── add-expense.png
-│   ├── expense-details.png
-│   ├── balances.png
-│   ├── settlements.png
-│   ├── receipt.png
-│   └── profile.png
-│
-├── README.md
-└── LICENSE
+┌──────────────────────────────┐
+│          Flutter App         │
+│                              │
+│       Dart + Flutter UI      │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│           Firebase           │
+│                              │
+│  ┌────────────────────────┐  │
+│  │ Firebase Authentication│  │
+│  └────────────────────────┘  │
+│                              │
+│  ┌────────────────────────┐  │
+│  │     Cloud Firestore    │  │
+│  └────────────────────────┘  │
+│                              │
+│  ┌────────────────────────┐  │
+│  │    Cloud Storage       │  │
+│  └────────────────────────┘  │
+│                              │
+│  ┌────────────────────────┐  │
+│  │ Firebase Cloud Messaging│ │
+│  └────────────────────────┘  │
+└──────────────────────────────┘
 ```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Make sure the required development environment and project dependencies are installed.
-
-### Clone the repository
-
-```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-```
-
-### Open the project
-
-Open the project in your preferred development environment.
-
-### Configure the application
-
-Configure the required:
-
-* Database
-* Authentication
-* Storage
-* Push notifications
-* Environment variables
-
-according to your project configuration.
-
-### Run the application
-
-Build and run the application on an Android device or emulator.
-
----
-
-## 📈 Future Enhancements
-
-Potential improvements for future versions include:
-
-* 📊 Advanced expense analytics
-* 📅 Monthly expense summaries
-* 💱 Multi-currency support
-* 📤 CSV/PDF expense export
-* 🔎 Advanced expense search
-* 💳 Payment integration
-* 📈 Spending charts and insights
-* 🔁 Recurring expenses
-* 🌍 Multi-language support
 
 ---
 
@@ -361,21 +322,17 @@ Smart Expense is available on Google Play.
 
 ## 📸 App Screenshots
 
-> Screenshots of Smart Expense are shown below.
-
 <p align="center">
-  <img src="screenshots/home.png" width="220" alt="Smart Expense Home"/>
-  <img src="screenshots/groups.png" width="220" alt="Smart Expense Groups"/>
-  <img src="screenshots/add-expense.png" width="220" alt="Add Expense"/>
-  <img src="screenshots/expense-details.png" width="220" alt="Expense Details"/>
+ <img width="591" height="1280" alt="1" src="https://github.com/user-attachments/assets/f3bac976-f3b9-4a3b-bcab-cf4201f24447" />
+<img width="591" height="1280" alt="2" src="https://github.com/user-attachments/assets/ca85b114-0c4f-41b9-a6ff-870fe91a74bb" />
+<img width="591" height="1280" alt="3" src="https://github.com/user-attachments/assets/e84854bc-dbda-415b-ae9d-ead550d3fd67" />
+<img width="591" height="1280" alt="4" src="https://github.com/user-attachments/assets/f8e6226e-56ed-4a36-a8e1-45d2af3c8a97" />
+<img width="591" height="1280" alt="5" src="https://github.com/user-attachments/assets/056ff297-08f2-4d74-b31e-c192e4f49820" />
+<img width="591" height="1280" alt="6" src="https://github.com/user-attachments/assets/ee2b4221-0d17-4913-8ff2-25cd7ee5b4de" />
+<img width="591" height="1280" alt="7" src="https://github.com/user-attachments/assets/1397673c-a3c1-4336-bc89-02d5b2681742" />
+
 </p>
 
-<p align="center">
-  <img src="screenshots/balances.png" width="220" alt="Balances"/>
-  <img src="screenshots/settlements.png" width="220" alt="Settlements"/>
-  <img src="screenshots/receipt.png" width="220" alt="Receipt"/>
-  <img src="screenshots/profile.png" width="220" alt="Profile"/>
-</p>
 
 ---
 
@@ -392,5 +349,5 @@ Software Engineer • AI/ML & Full-Stack Systems
 </p>
 
 <p align="center">
-  Built to make shared expenses simple, transparent, and stress-free.
+  Built with Flutter & Firebase to make shared expenses simple, transparent, and stress-free.
 </p>
